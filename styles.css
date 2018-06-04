@@ -1,28 +1,72 @@
 #slider {
   width: 500px;
   height: 500px;
-  background-color: lightgray;
+  background-color: white;
   display: flex;
   justify-content: center;
   align-items: center;
-  z-index: -2;
+  z-index: 7;
 }
 #square {
-  background-color: black;
-  width: 50px;
+  background-color: grey;
+  width: 20px;
   height: 50px;
   transition: all .3s;
-  border: 1px solid white;
+  border: 1px solid black;
   border-radius: 8px;
-  z-index: 1;
+  z-index: 11;
   position: relative;
-  right: 20px;
+  right: 8%;
+  cursor: pointer;
+}
+#bar-parent {
+  background-color: white;
+  width: 100px;
+  height: 50px;
+  position: absolute;
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  border-radius: 8px;
+  z-index: 10;
+  overflow: hidden;
+  border: 3px solid black;
 }
 #bar {
-  background-color: white;
-  width: 50px;
-  height: 15px;
+  width: 200%;
+}
+#on {
+  width: 100px;
+  height: 50px;
+  background-color: #5cb85c;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 24px;
+  font-family: 'Dosis', sans-serif;
+  color: white;
   position: absolute;
+  right: 100%;
+  z-index: 5;
+  transition: all .3s;
+  cursor: pointer;
+}
+#off {
+  width: 100px;
+  height: 50px;
+  background-color: #c9302c;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 24px;
+  font-family: 'Dosis', sans-serif;
+  color: white;
+  margin-right: 0px;
+  position: absolute;
+  left: 5%;
+  z-index: 4;
+  transition: all .3s;
+  cursor: pointer;
 }
 #status {
   height: 50px;
