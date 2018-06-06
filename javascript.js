@@ -24,4 +24,20 @@ $(document).ready(function(){
     squareStatus = 'off';
     }
   });
+
+  var masterPlay = document.getElementById('square');
+  var mainPlay = document.getElementById('off');
+  var mainPause = document.getElementById('on');
+  var music2 = document.getElementById('music2');
+  masterPlay.addEventListener("click", play);
+  mainPlay.addEventListener("click", play);
+  mainPause.addEventListener("click", play);
+
+  function play(){
+  if (music2.paused) {
+      music2.play();
+    } else {
+      music2.pause();
+    }
+  }
 });
